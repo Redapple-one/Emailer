@@ -19,7 +19,7 @@ jobs:
         java-version: 21
         distribution: 'zulu'
     - name: Build with Gradle
-      run: ./gradlew build
+      run: sudo ./gradlew build
     - uses: actions/upload-artifact@v4
       with:
         name: artifact
